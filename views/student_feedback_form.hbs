@@ -1,0 +1,62 @@
+<div>
+
+    <div class="bg-primary bg-gradient mx-auto p-2 m-2">
+    <h1>Please provide feedback. You may do so anonymously.</h1>
+    </div>
+
+    <div class="row">
+
+    <div class="col-md-5">
+        <h2>Instructions</h2>
+        <p>As one of our students, your thoughts and feedback are important.</p>
+        <p>Please send them using this form.</p>
+        <p>If you would like us to follow up with you, provide your contact information.</p>
+    </div>
+
+    <div class="col-md-7">
+        <form method="POST" action="/submit-feedback">
+        <div class="form-group">
+            <p>
+            <label class="form-label" for="name">Name: </label>
+            <input class="form-control" id="student_name" name="name" type="text">
+            </p>
+        </div>
+
+        <div class="form-group">
+            <p>
+            <label class="form-label" for="email">Email: </label>
+            <input class="form-control" id="student_email" name="email" type="email">
+            </p>
+        </div>
+
+        <div class="form-group">
+            <p>
+            <label class="form-label" for="comments">Comments: </label>
+            <br>
+            <textarea class="form-control" id="student_comments" name="comments" required></textarea>
+            </p>
+        </div>
+
+        <br>
+
+        <div class="form-group">
+            <p>
+            Are you a current student?
+            <div class="form-check">
+            <input class="form-check-input" name="current-student" id="student_current" type="radio" value="yes" checked>
+            <label class="form-check-label" for="current-student">Yes</label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" name="current-student" id="student_current" type="radio" value="no">
+            <label class="form-check-label" for="current-student">No</label>
+            </div>
+            </p>
+        </div>
+
+        <p>
+        <input class="btn btn-primary mt-2" id="student_submit" type="submit">
+        </p>
+        </form>
+    </div>
+    </div>
+</div>
